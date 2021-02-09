@@ -6,7 +6,7 @@
   You can refresh the page at any time to re-run all the tests.
 */
 
-////////// PROBLEM 1 //////////
+////////// PROBLEM 1 -- COMPLETED!! //////////
 
 // Do not edit the code below.
 var carDetails = {
@@ -23,9 +23,11 @@ var carDetails = {
 
 //Code Here
 
+const { color, make, model, year } = carDetails
 
 
-////////// PROBLEM 2 //////////
+
+////////// PROBLEM 2 - COMPLETED!  //////////
 
 /*
   In the function below named greeting, it is receiving an object as a parameter. 
@@ -33,17 +35,14 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  //Code Here
-  
+function greeting(obj){ 
+  let {firstName: firstName, lastName: lastName, title: title} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
-
-
-////////// PROBLEM 3 //////////
+////////// PROBLEM 3 - COMPLETED!  //////////
 
 /*
   Write a function called totalPopulation that will take in an object.
@@ -54,10 +53,13 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation (obj){
+const {utah, california, texas, arizona} = obj
+return utah + california + texas + arizona
+}
 
 
-
-////////// PROBLEM 4 //////////
+////////// PROBLEM 4 - COMPLETED!! //////////
 
 /*
   Write a function called ingredients that will take in an object. 
@@ -69,9 +71,13 @@ function greeting( obj ) {
 
 //Code Here
 
+function ingredients(obj) {
+  const {carb, fat, protein} = obj
+  return [carb, fat, protein]
+} 
 
 
-////////// PROBLEM 5 //////////
+////////// PROBLEM 5 - COMPLETED!! //////////
 
 /*
   Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration.
@@ -87,9 +93,18 @@ function greeting( obj ) {
 
 //Code Here
 
+function largeNumbers( {first, second, third} ){
+  if (first < second && first < third) {
+  return first }
+    else if (second < first && second < third) {
+    return second }
+      else {
+        return third
+      }
+    }
 
 
-////////// PROBLEM 6 //////////
+////////// PROBLEM 6 - COMPLETED!!!  //////////
 
 /*
   Write a function called numberGroups that will take a destructured object as it's parameter.
@@ -99,4 +114,13 @@ function greeting( obj ) {
 
 //Code Here
 
+function numberGroups( {a, b, c} ){
+  if (a > b && a > c) {
+    return a }
+      else if (b > a && b > c) {
+      return b }
+        else {
+          return c
+        }
+      }
 

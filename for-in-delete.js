@@ -40,10 +40,12 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  for (let key in obj) {
+    console.log(obj[key])
+  }
 }
 
-
+//Code Here
 
 ////////// PROBLEM 2 //////////
 
@@ -54,6 +56,14 @@ function showValues( obj ) {
 */
 
 //Code Here
+
+function greaterThan10(obj){
+  for (let key in obj) {
+    if (key.includes > 10){
+      obj[key] = 0
+    }
+  }
+}
 
 
 
@@ -111,6 +121,8 @@ function showValues( obj ) {
 */
 
 //Code Here
+
+
 
 
 
