@@ -52,6 +52,20 @@ var employees = [
 
 //Code Here
 
+function employeeUpdater() {
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].firstName === 'Theo') {
+    delete employees[i] 
+  }  else if (employees[i].firstName === 'Lorie') {
+   employees[i].department = 'HR'
+      }
+    }
+    return employees
+  }
+
+
+
+
 
 
 ////////// PROBLEM 2 //////////
@@ -69,6 +83,28 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+
+// function removeDuplicates(){
+//   for (let i = workplaceAccidents.length-1; i >= 0; i--) {
+//     for (let j = workplaceAccidents[i].length; j >= 0; j--){
+//     if (workplaceAccidents[i] === workplaceAccidents[j]) {
+//       workplaceAccidents.splice(j, 1,)
+//     }
+//   }
+// }
+// return workplaceAccidents
+// }
+
+function removeDuplicates() {
+  for (let i = 0; i <= workplaceAccidents.length; i++) {
+    for (let j = 0; j <= workplaceAccidents.length; j++) {
+      if (workplaceAccidents[i] === workplaceAccidents[j] && i != j) {
+        workplaceAccidents.splice(j, 1);
+      }
+    }
+  }
+  return workplaceAccidents;
+}
 
 
 
@@ -99,6 +135,13 @@ var cat = {
 //Code Here
 var grumpyActivity;
 var fluffy2ndFriend;
+
+grumpyActivity = cat['catFriends'][0].activities[1]
+console.log(grumpyActivity)
+
+fluffy2ndFriend = cat['catFriends'][1].name
+
+
 
 
 
@@ -139,6 +182,7 @@ var myCar = {
 */
 
 //Code Here
+
 
 
 
