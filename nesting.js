@@ -140,6 +140,7 @@ grumpyActivity = cat['catFriends'][0].activities[1]
 console.log(grumpyActivity)
 
 fluffy2ndFriend = cat['catFriends'][1].name
+console.log(fluffy2ndFriend)
 
 
 
